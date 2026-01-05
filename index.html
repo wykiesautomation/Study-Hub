@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Natasha's Study Hub — Grade 8–12 Papers & Answers</title>
+  <meta name="description" content="South Africa Grade 8–12 study packs: past papers with fully worked answers. Instant digital delivery. Pay via WhatsApp or PayFast." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container flex between center-v">
+      <div class="brand">
+        <img src="assets/logo.svg" alt="Logo" class="logo" />
+        <span class="brand-name">Natasha's Study Hub</span>
+      </div>
+      <nav class="nav">
+        <a href="#how">How it works</a>
+        <a href="#catalog">Catalog</a>
+        <a href="#downloads">Free Downloads</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Grade 8–12 Past Papers with Fully Worked Answers</h1>
+      <p class="sub">South Africa CAPS-aligned study packs you can download instantly.
+         Simple pricing, secure payment, and WhatsApp support.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#catalog">Browse Packs</a>
+        <a class="btn btn-outline" href="https://wa.me/27716816131?text=Hi!%20I'm%20interested%20in%20study%20packs.%20Please%20assist." target="_blank" rel="noopener">WhatsApp Us</a>
+      </div>
+      <ul class="trust">
+        <li>✔ CAPS-aligned</li>
+        <li>✔ Instant Digital Delivery</li>
+        <li>✔ Secure Payments</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="how" class="how">
+    <div class="container grid-2">
+      <div>
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li>Pick your grade & subject.</li>
+          <li>Add packs to cart and checkout via WhatsApp or PayFast.</li>
+          <li>Receive download links instantly after payment.</li>
+        </ol>
+        <div class="badges">
+          <span class="badge">VAT included</span>
+          <span class="badge">Email receipt</span>
+          <span class="badge">PDF downloads</span>
+        </div>
+      </div>
+      <div class="card note">
+        <h3>Parents & Learners</h3>
+        <p>We focus on clear, step-by-step solutions to build confidence. Each pack includes tips and marking guidelines aligned to SA exams.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="catalog" class="catalog">
+    <div class="container">
+      <h2>Catalog</h2>
+      <div class="filters">
+        <label>Grade:
+          <select id="filter-grade">
+            <option value="all">All</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+        </label>
+        <label>Subject:
+          <select id="filter-subject">
+            <option value="all">All</option>
+            <option>Mathematics</option>
+            <option>Physical Science</option>
+            <option>English HL</option>
+            <option>Accounting</option>
+          </select>
+        </label>
+      </div>
+      <div id="product-grid" class="grid-3"></div>
+    </div>
+  </section>
+
+  <section class="cart-section">
+    <div class="container">
+      <h2>Your Cart</h2>
+      <div id="cart-list" class="cart-list"></div>
+      <div class="cart-total-row">
+        <span id="cart-total-label">Total:</span>
+        <span id="cart-total">R0</span>
+      </div>
+      <div class="cta-row">
+        <button class="btn btn-primary" id="checkout-whatsapp">Checkout via WhatsApp</button>
+        <button class="btn btn-outline" id="checkout-payfast" title="PayFast checkout uses a hosted payment page">Checkout via PayFast</button>
+      </div>
+      <p class="cart-note">Tip: WhatsApp checkout is great for quick help or EFT. PayFast checkout supports cards and instant EFT. </p>
+    </div>
+  </section>
+
+  <section id="downloads" class="downloads">
+    <div class="container grid-2">
+      <div>
+        <h2>Free Downloads</h2>
+        <ul class="free-list">
+          <li><a href="#" onclick="alert('Placeholder PDF: add your Google Drive link'); return false;">Exam Planner (PDF)</a></li>
+          <li><a href="#" onclick="alert('Placeholder PDF: add your Google Drive link'); return false;">Study Timetable Template (PDF)</a></li>
+          <li><a href="#" onclick="alert('Placeholder PDF: add your Google Drive link'); return false;">Formula Sheet (Maths & Science)</a></li>
+        </ul>
+      </div>
+      <div class="card note">
+        <h3>Need something specific?</h3>
+        <p>We also create custom packs. Tell us your chapters and deadlines on WhatsApp and we’ll prepare a tailored set.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container grid-2">
+      <div>
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:wykiesautomation@gmail.com">wykiesautomation@gmail.com</a></p>
+        <p>WhatsApp: <a href="https://wa.me/27716816131" target="_blank" rel="noopener">+27 71 681 6131</a></p>
+        <p>Location: Vanderbijlpark, South Africa</p>
+      </div>
+      <form id="lead-form" class="card" onsubmit="return submitLead(event)">
+        <h3>Get a discount code</h3>
+        <label>Name <input type="text" id="lead-name" required></label>
+        <label>Email <input type="email" id="lead-email" required></label>
+        <label>Grade <select id="lead-grade"><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option></select></label>
+        <button class="btn btn-primary" type="submit">Send</button>
+        <p id="lead-status" class="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container between center-v">
+      <small>© 2026 Natasha's Study Hub — All rights reserved.</small>
+      <div class="footer-links">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

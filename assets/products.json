@@ -1,0 +1,58 @@
+[
+  {
+    "id": "G8-MATH-CORE",
+    "title": "Grade 8 Mathematics \u2014 Term Test Pack (Past Papers + Answers)",
+    "grade": 8,
+    "subject": "Mathematics",
+    "price": 49,
+    "file_url": "https://drive.google.com/your-link-here"
+  },
+  {
+    "id": "G9-MATH-CORE",
+    "title": "Grade 9 Mathematics \u2014 Term Test Pack (Past Papers + Answers)",
+    "grade": 9,
+    "subject": "Mathematics",
+    "price": 49,
+    "file_url": "https://drive.google.com/your-link-here"
+  },
+  {
+    "id": "G10-SCI-CORE",
+    "title": "Grade 10 Physical Science \u2014 Exam Pack (Papers + Memos)",
+    "grade": 10,
+    "subject": "Physical Science",
+    "price": 69,
+    "file_url": "https://drive.google.com/your-link-here"
+  },
+  {
+    "id": "G11-SCI-CORE",
+    "title": "Grade 11 Physical Science \u2014 Exam Pack (Papers + Memos)",
+    "grade": 11,
+    "subject": "Physical Science",
+    "price": 79,
+    "file_url": "https://drive.google.com/your-link-here"
+  },
+  {
+    "id": "G12-MATH-FULL",
+    "title": "Grade 12 Mathematics \u2014 Full Year Pack (March/June/Sept/Nov) + Answers",
+    "grade": 12,
+    "subject": "Mathematics",
+    "price": 149,
+    "file_url": "https://drive.google.com/your-link-here"
+  },
+  {
+    "id": "G12-ENG-HL",
+    "title": "Grade 12 English HL \u2014 Paper 1\u20133 Pack + Marking Guidelines",
+    "grade": 12,
+    "subject": "English HL",
+    "price": 99,
+    "file_url": "https://drive.google.com/your-link-here"
+  },
+  {
+    "id": "G12-ACC-CORE",
+    "title": "Grade 12 Accounting \u2014 Exam Pack + Solutions",
+    "grade": 12,
+    "subject": "Accounting",
+    "price": 119,
+    "file_url": "https://drive.google.com/your-link-here"
+  }
+]

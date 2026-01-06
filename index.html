@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Natasha's Study Hub — Past Papers (Downloads)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container hdr">
+      <div class="logo">Natasha's Study Hub</div>
+      <nav class="nav">
+        <a href="#why">Why Us</a>
+        <a href="#packs">Packs</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn small ghost" href="https://wa.me/27716816131">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1>Give your child an <span class="accent">advantage</span></h1>
+        <p class="lead">CAPS‑aligned past papers and memos (worked solutions when available), curated for Grades 8–12. Instant downloads. No fuss.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#packs">Browse packs</a>
+          <a class="btn white" href="https://wa.me/27716816131">Chat to us</a>
+        </div>
+        <div class="trust">
+          <span>Instant downloads</span>
+          <span>Secure PayFast</span>
+          <span>CAPS aligned</span>
+        </div>
+      </div>
+      <div class="hero-cards">
+        <div class="floating card a">Latest 3 Years<br/><small>Focus on what's most likely to appear.</small></div>
+        <div class="floating card b">Worked Solutions<br/><small>Understand methods, not just answers.</small></div>
+        <div class="floating card c">Instant Delivery<br/><small>Buy and download immediately.</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why" class="why">
+    <div class="container">
+      <h2>Why parents choose us</h2>
+      <div class="pillars">
+        <div class="pillar">
+          <h3>Save time</h3>
+          <p>We've done the searching and sorting. Download, prepare, done.</p>
+        </div>
+        <div class="pillar">
+          <h3>Aligned to CAPS</h3>
+          <p>Hand‑picked papers that match the current syllabus emphasis.</p>
+        </div>
+        <div class="pillar">
+          <h3>Safe & secure</h3>
+          <p>Card & instant EFT via PayFast. Links delivered to your email.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="packs" class="packs">
+    <div class="container">
+      <div class="packs-head">
+        <h2>Choose your grade and subject</h2>
+        <div class="filters">
+          <label>
+            Grade
+            <select id="gradeSelect">
+              <option value="12">12</option>
+              <option value="11">11</option>
+              <option value="10">10</option>
+              <option value="9">9</option>
+              <option value="8">8</option>
+            </select>
+          </label>
+          <label>
+            Subject
+            <select id="subjectSelect"><!-- populated by JS --></select>
+          </label>
+        </div>
+      </div>
+      <p>Transparent pricing: 10 papers = R99, 20 papers = R199, 30 papers = R299. Includes Question Papers + Memos when available.</p>
+      <div id="packGrid" class="grid"><!-- cards render here --></div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <div class="carousel">
+        <button class="carousel-btn prev">‹</button>
+        <div class="slides">
+          <div class="slide active">
+            <blockquote>“Exactly what we needed before prelims. Instant, organised, no nonsense.”</blockquote>
+            <div>— Gavin P., Parent</div>
+          </div>
+          <div class="slide">
+            <blockquote>“Being able to pick 10/20/30 papers per subject kept costs low and practice high.”</blockquote>
+            <div>— Natasha V., Grade 12</div>
+          </div>
+        </div>
+        <button class="carousel-btn next">›</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <div class="container">
+      <h2>Frequently asked questions</h2>
+      <details>
+        <summary>How do I get the files after payment?</summary>
+        <p>Right after PayFast confirms your payment, the system emails you a download link. We can also WhatsApp it on request.</p>
+      </details>
+      <details>
+        <summary>Are these aligned to the current syllabus?</summary>
+        <p>Yes. Most sets are 2018+, and premium selections are 2020+ to match current style and emphasis.</p>
+      </details>
+      <details>
+        <summary>Can I get help picking the right pack?</summary>
+        <p>Absolutely — tap WhatsApp in the header, or use the form below.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <div class="contact-card">
+        <h3>Ask a question</h3>
+        <form id="askForm" class="form">
+          <div class="row">
+            <input type="text" name="name" placeholder="Your name" required />
+            <input type="email" name="email" placeholder="Your email" required />
+          </div>
+          <textarea name="message" rows="4" placeholder="Your question"></textarea>
+          <button class="btn primary" type="submit">Send</button>
+          <div id="askStatus" class="status"></div>
+        </form>
+        <p>Or email: <a href="mailto:wykiesautomation@gmail.com">wykiesautomation@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container foot">
+      <div>© 2026 Natasha's Study Hub</div>
+      <div>Email: <a href="mailto:wykiesautomation@gmail.com">wykiesautomation@gmail.com</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

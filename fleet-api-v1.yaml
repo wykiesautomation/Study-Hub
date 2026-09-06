@@ -1,0 +1,33 @@
+openapi: 3.1.0
+info:
+  title: FleetTrack 360 Fleet API
+  version: 1.0.0
+servers:
+  - url: /api/fleet/v1
+paths:
+  /health:
+    get:
+      responses:
+        '200': {description: API health}
+  /vehicles:
+    get:
+      responses:
+        '200': {description: Vehicle list}
+    post:
+      responses:
+        '201': {description: Vehicle created}
+  /locations/batch:
+    post:
+      responses:
+        '202': {description: Batch accepted}
+        '207': {description: Batch partially accepted}
+  /fuel/observations/batch:
+    post:
+      responses:
+        '202': {description: Fuel observations accepted}
+        '409': {description: Device capability not supported}
+  /diagnostics/batch:
+    post:
+      responses:
+        '202': {description: Diagnostics accepted}
+        '409': {description: Device capability not supported}

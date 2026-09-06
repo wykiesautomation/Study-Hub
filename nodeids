@@ -1,0 +1,5 @@
+[
+  "tests/test_static_contract.py::test_full_web_areas",
+  "tests/test_static_contract.py::test_product_contracts",
+  "tests/test_static_contract.py::test_safety_contracts"
+]
